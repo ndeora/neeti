@@ -36,7 +36,7 @@ class Task < ApplicationRecord
     end
 
     def log_task_details
-      TaskLoggerJob.perform_later(self)
+      # TaskLoggerJob.perform_later(self)
     end
 
     def set_slug
